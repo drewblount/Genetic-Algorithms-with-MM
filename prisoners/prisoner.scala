@@ -25,7 +25,7 @@ class Prisoner(gnome: Array[Boolean], memsize: Int) {
   
   // memory(i) contains the opponent's ith most recent move,
   // and -1 if there is no memory of that
-  val memory:Array[Int] = Array.fill[Int](n)(-1);
+  var memory:Array[Int] = Array.fill[Int](n)(-1);
 
   // Determines the prisoner's behavior by looking up the position
   // in the genome corresponding to the prisoner's current mem array
