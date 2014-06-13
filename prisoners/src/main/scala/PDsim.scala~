@@ -61,6 +61,75 @@ class PDsim(n:Int, s:Int, g:Int, iters:Int, pm:Double, pc:Double) {
     }
   }
 
+  def sampleParent():Prisoner = {
+    // sample from the population of prisoners with the probability of
+    // selecting a prisoner being proportional to its fitness.
+    // Note - here points and fitness are synonymous.  
+
+    val fitArray = population.prisoners map {x => x.points};
+    val fitArrayProp = fitArray map {x => x/fitArray.sum};
+    val params = DenseVector(fitArrayProp);
+
+    // The params vector now carries the parameters for the appropriate 
+    // multinomial random variable which we wish to sample. 
+
+    val mult = new Multinomial(params);
+    val index = mult.draw;
+    val parent = population.prisoners(index);
+    return parent;
+  }
+
+  def produceChild(parent1:Prisoner, parent2:Prisoner):Array[Prisoner] = {
+    val bern = new Bernoulli(pCrossover);
+    
+    // Decision is either 0 or 1. 
+    // If 1, then we cross over the children.
+    // If 0, then the children are copies of the parents. 
+    val decision = bern.draw();
+
+    //Create a blank bool array to pass to the new prisoner children (lol, sucks)
+    val placeholder:Array[Boolean] = new Array[Boolean](genomeSize);
+    val child1:Prisoner = new Prisoner(placeholder, memSize);
+    val child2:Prisoner = new Prisoner(placeholder, memSize);
+
+    if (decision) {
+      //randomly choose an index at which to cross over the genome. 
+      val unif = new Uniform(0,genomeSize - 1);
+      val index = unif.draw.round.toInt;
+
+      // If the index chosen is the last in the array, then no crossover occurs.
+      if (index == (genomeSize - 1)) {
+        child1 = parent1;
+	child2 = parent2;
+      }
+
+      //Otherwise, perform the crossover. 
+      else {
+        //Slice up the dna arrays of the parents.
+	val p1s1:Array[Boolean] = parent1.genome.slice(0,index+1);
+	val p2s1:Array[Boolean] = parent2.genome.slice(index + 1, genomeSize);
+	val genome1:Array[Boolean] = Array.concat(p1s1,p2s1);
+
+	val p1s2:Array[Boolean] = parent1.dna.slice(index +1, genomeSize);
+	val p2s2:Array[Boolean] = parent2.dna.slice(0, index+1);
+	val genome2:Array[Boolean] = Array.concat(p2s2,p1s2);
+
+	child1 = new Prisoner(genome1, memSize);
+	child2 = new Prisoner(genome2, memSize);
+      } 
+    }
+
+    else {
+      child1 = parent1;
+      child2 = parent2;
+    }
+
+    mutate(child1, pMutation);
+    mutate(child2, pMutation);
+    val children:Array[Prisoner] = Array[Prisoner](child1, child2);
+    return children;
+  }
+
 
 
 }
