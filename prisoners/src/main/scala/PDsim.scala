@@ -19,12 +19,17 @@ class PDsim(n:Int, s:Int, g:Int, iters:Int, pm:Double, pc:Double) {
   val pMutation:Double = pm;
   val pCrossover:Double = pc;
 
-  val population = new Population(numPrisoners, memSize);
+  var population = new Population(numPrisoners, memSize);
   val payoff:Array[Int] = Array(10, 2, 8, 5);
   
   // Initialize the population with random strategy genomes. 
   population.initialize();
 
+  def resetPoints():Unit = {
+    for (prisoner <- population.prisoners) {
+      prisoner.points = 0;
+    }
+  }
   
   // Samples from the population of prisoners with uniform probability
   // So that we pick people to play games with eachother.  
@@ -66,8 +71,8 @@ class PDsim(n:Int, s:Int, g:Int, iters:Int, pm:Double, pc:Double) {
     // selecting a prisoner being proportional to its fitness.
     // Note - here points and fitness are synonymous.  
 
-    val fitArray = population.prisoners map {x => x.points};
-    val fitArrayProp = fitArray map {x => x/fitArray.sum.toDouble};
+    val fitArray = population.prisoners map {x => x.points.toDouble};
+    val fitArrayProp = fitArray map {x => x/fitArray.sum};
     val params = DenseVector(fitArrayProp);
 
     // The params vector now carries the parameters for the appropriate 
@@ -117,7 +122,7 @@ class PDsim(n:Int, s:Int, g:Int, iters:Int, pm:Double, pc:Double) {
 	child1 = new Prisoner(genome1, memSize);
 	child2 = new Prisoner(genome2, memSize);
       } 
-    }
+   }
 
     else {
       child1 = parent1;
@@ -130,6 +135,35 @@ class PDsim(n:Int, s:Int, g:Int, iters:Int, pm:Double, pc:Double) {
     return children;
   }
 
+  def performIteration():Population = {
+    var newpop:Population = new Population(numPrisoners,memSize);
+    var counter = 0;
+    while (counter < numPrisoners) {
+      val parent1:Prisoner = sampleParent();
+      val parent2:Prisoner = sampleParent();
+      val children:Array[Prisoner] = produceChild(parent1, parent2);
+      val child1:Prisoner = children(0);
+      val child2:Prisoner = children(1);
+      newpop.prisoners(counter) = child1;
+      newpop.prisoners(counter + 1) = child2;
+      counter = counter + 2;
+      }
+    println("Population Summary");
+    println(population.prisoners.mkString(", "));
+    println("Average Points: "+population.avgFit());
+    println("Maximum Points: "+population.maxFit());
+    println(" ");
+    resetPoints();
+    return newpop;
+    
+    }
 
+    def runSimulation():Unit = {
+      for (i <- 1 to numIterations) {
+        matchupEveryone();
+        population = performIteration();
+      }
+    }
 
-}
+  }
+

@@ -50,22 +50,6 @@ class Prisoner(gnome: Array[Boolean], memsize: Int) {
 
 	return genome(index + offset);
   }
-
-  //Definte toInt for Booleans
-  def boolToInt(b:Boolean):Int = {
-    if (b) {
-      return 1;
-    }
-    else {
-      return 0;
-    }
-  }
-
-  override def toString():String = {
-    val genome_temp:Array[Int] = genome map {x => boolToInt(x)};
-    val string:String = genome_temp.mkString("");
-    return string;
-  }
   
 
 }
