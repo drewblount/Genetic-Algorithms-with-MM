@@ -9,7 +9,7 @@ import breeze.stats.distributions._
 import breeze.linalg._
 import math._
 
-class PDsim(n:Int, s:Int, g:Int, iters:Int, pm:Double, pc:Double) {
+class PDsim(n:Int, s:Int, g:Int, iters:Int, pm:Double, pc:Double, verbose:Boolean = false) {
   // Define the parameters of the simulation
   val numPrisoners:Int = n;
   val memSize:Int = s;
@@ -132,7 +132,11 @@ class PDsim(n:Int, s:Int, g:Int, iters:Int, pm:Double, pc:Double) {
     mutate(child1, pMutation);
     mutate(child2, pMutation);
     val children:Array[Prisoner] = Array[Prisoner](child1, child2);
-    return children;
+    
+	if (verbose) println(parent1.genomeToInt.mkString + " + " + parent2.genomeToInt.mkString + " -> " +
+						 child1.genomeToInt.mkString  + " , " + child2.genomeToInt.mkString)
+
+	return children;
   }
 
   def performIteration():Population = {

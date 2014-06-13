@@ -51,6 +51,10 @@ class Prisoner(gnome: Array[Boolean], memsize: Int) {
 	return genome(index + offset);
   }
 
+  def genomeToInt():Array[Int] = {
+	return genome map (boolToInt(_))
+  }
+
   //Definte toInt for Booleans
   def boolToInt(b:Boolean):Int = {
     if (b) {
