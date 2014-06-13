@@ -4,6 +4,12 @@ Forked from Drew Blount.
 
 This repo simulates the iterated prisoner's dilemma.
 
+### TODO/Problems
+
+Just realized that there are problems with crossover,... i.e. it's not happening, period.  
+
+Try setting probability of mutation to zero and probability of crossover to 1. Nothing happens. Looking into it!
+
 ### How to
 
 Bring up the sbt console with:
