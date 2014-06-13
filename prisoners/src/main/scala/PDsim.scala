@@ -20,7 +20,7 @@ class PDsim(n:Int, s:Int, g:Int, iters:Int, pm:Double, pc:Double) {
   val pCrossover:Double = pc;
 
   val population = new Population(numPrisoners, memSize);
-  val payoff:Array[Int] = Array(10, 8, 2, 5);
+  val payoff:Array[Int] = Array(10, 2, 8, 5);
   
   // Initialize the population with random strategy genomes. 
   population.initialize();
