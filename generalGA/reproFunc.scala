@@ -3,7 +3,7 @@
 
 def reproGenerator(selectionType:String, crossoverType:String,
 		   crossProb:Double, 
-		   mutProb:Double):Array[_ <: Agent] => Array[_ <: Agent = {
+		   mutProb:Double):Array[_ <: Agent] => Array[_ <: Agent] = {
   
   // selectionGen
   // 
@@ -11,7 +11,7 @@ def reproGenerator(selectionType:String, crossoverType:String,
   // Selection function takes a population and returns an agent. 
   // 
   // TODO: write this function. 
-  val selectionGen(selectionType:String):Array[_ <: Agent] => _ <: Agent;
+  val selectionGen(selectionType:String):Array[_ <: Agent] => _ <: Agent
 
   // crossoverGen
   // 
