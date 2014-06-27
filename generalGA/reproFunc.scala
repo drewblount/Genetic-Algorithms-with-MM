@@ -21,7 +21,7 @@ def reproGenerator(selectionType:String, crossoverType:String,
   //   TODO: write this function.  
   val crossoverGen(crossoverType:String):(_ <: Agent, _ <: Agent) => (_ <: Agent, _ <: Agent)
 
-  def mutate(ag:_ <: Agent):_ <: Agent = {
+  def mutate(ag:_ <: Agent, mutProb: Double):_ <: Agent = {
     // Not sure what to do here because I'm reluctant to include dependency on breeze. 
     // As this code now stands it is not providing the correct return type. 
   } 		 
@@ -39,7 +39,7 @@ def reproGenerator(selectionType:String, crossoverType:String,
     while (newPop.length < numAgents) {
       val parent1 = select(pop)
       val parent2 = select(pop)
-      val children = crossover(parent1, parent2)
+      val children = crossover(parent1, parent2, crossProb:Double)
       children.foreach((child:_ <:Agent) => mutate(child))
       newPop :+= children // Is this doable? Append tuple to Array? Probably not. 
     }
