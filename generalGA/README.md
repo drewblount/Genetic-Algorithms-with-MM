@@ -24,3 +24,9 @@ Use
 
 To make a new simulation environment (e.g. to evolve  prisoner's dilemma strategies), make a new scala class extending simulation, and an extension of file defining the extension of the Agent class  and the fitness function.
 
+TODO
+_____________
+
+* Complete base componenent functions for selection, crossover
+* Include 'ParentsPerReproUnit', 'ChildrenPerReproUnit' as params to reproGenerator.
+* Update component functions accordingly. 
