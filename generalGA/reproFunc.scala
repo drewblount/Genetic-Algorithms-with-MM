@@ -1,3 +1,6 @@
+object CrossoverTypeError extends Exception
+object SelectionTypeError extends Exception
+
 // Creates reproGenerator that returns reproduction functions given params. 
 // This is just a sketch. I'm still new to some of these concepts. 
 
@@ -19,7 +22,19 @@ def reproGenerator(selectionType:String, crossoverType:String,
   //   crossover function takes two parents and returns two children. 
   // 
   //   TODO: write this function.  
-  val crossoverGen(crossoverType:String):(_ <: Agent, _ <: Agent) => (_ <: Agent, _ <: Agent)
+  val crossoverGen(crossoverType:String):(_ <: Agent, _ <: Agent) => (_ <: Agent, _ <: Agent) = {
+	if (crossoverType == "slice") {
+	  def sliceFunc(parentA <: Agent, parentB <: Agent): (_ <: Agent, _<: Agent) = {
+		
+	}
+	else if (crossoverType == "shuffle") {
+
+	}
+	else throw CrossoverTypeError
+
+	return
+
+  }
 
   def mutate(ag:_ <: Agent, mutProb: Double):_ <: Agent = {
     // Not sure what to do here because I'm reluctant to include dependency on breeze. 
