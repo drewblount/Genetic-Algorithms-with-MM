@@ -12,7 +12,6 @@ abstract class Agent  {
   // This ClassTag business was suggested by '0__' on Stack Overflow: 
   // see 'define function for extension of abstract class'
   implicit def geneTag: reflect.ClassTag[geneType]
-  type AgentT[A] = Agent { type geneType = A }
   type Typed[A] = Agent { type geneType = A }
 
   def copy(newGenome: Array[geneType]): Typed[geneType]

@@ -25,8 +25,55 @@ Use
 To make a new simulation environment (e.g. to evolve  prisoner's dilemma strategies), make a new scala class extending simulation, and an extension of file defining the extension of the Agent class  and the fitness function.
 
 TODO
-_____________
+-------------
 
-* Complete base componenent functions for selection, crossover
-* Include 'ParentsPerReproUnit', 'ChildrenPerReproUnit' as params to reproGenerator.
-* Update component functions accordingly. 
+
+* Figure out how we want to generalize 'mutate' to genomeTypes other than Boolean. 
+* There are some serious unsolved type issues with the reproGenerator code. I will try to document the issues well
+  and get you up to speed on that code layout. 
+
+reproGenerator
+--------------
+
+Layout: 
+* selectionGenerator.scala uses the funcions from selectionFuncs.scala
+* crossoverGenerator.scala uses the functions from crossoverFuncs.scala
+* reproGenerator.scala uses selectionGenerator and crossoverGenerator to grab the appropriate
+  functions and compose them into the eventual reproduction function.  
+* We call reproGenerator from simulation.scala
+
+Issues: 
+* I attempted to make everything work with classes that extend an Agent.
+  The syntax that I decided upon for most functions was as you had it, except with a parametrizing type E.
+  For example, instead of  
+
+```scala
+def fitnessProportionateSampling(pop: Array[_ <: Agent]):_ <: Agent] = {// function definition}
+```
+
+We have 
+```scala
+def fitnessProportionateSampling[E <: Agent](pop:Array[E]):E = {
+```
+
+This seems to generally solve the problem you discussed of making sure that the extension of the abstract 
+agent class is the same type throughout a function. 
+
+But there are issues that arise in the code for sliceFunc when we use this type of type definition.
+To see further detail, one would be advised to try to compile the code with: 
+```
+sbt console
+```
+
+I've tried to mitigate this issue with the *type Typed[A]* code in the abstract class definition of Agent.
+But to no avail.  
+
+
+
+
+
+
+
+
+
+
