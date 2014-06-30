@@ -1,4 +1,4 @@
-## Iterated Prisoner's Dilemma
+## Genetic Algorithms 
 
 Forked from Drew Blount.  
 
