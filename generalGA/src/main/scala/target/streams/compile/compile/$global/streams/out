@@ -1,0 +1,145 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/simulation.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionFuncs.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/agent.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/simulation.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionFuncs.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/agent.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/simulation.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionFuncs.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/agent.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 7 sources: invalidated sources (7) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 7 Scala sources to /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 6ed94e72, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/var/root/.sbt/boot/scala-2.10.3/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/target/scala-2.10/classes[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:1: not found: object breeze[0m
+[0m[[31merror[0m] [0mimport breeze.linalg._[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:2: not found: object breeze[0m
+[0m[[31merror[0m] [0mimport breeze.stats.distributions._[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:12: not found: type Bernoulli[0m
+[0m[[31merror[0m] [0m    val bern = new Bernoulli(crossoverProb)[0m
+[0m[[31merror[0m] [0m                   ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:22: not found: type Uniform[0m
+[0m[[31merror[0m] [0m      val unif = new Uniform(0, genomeSize - 1)      [0m
+[0m[[31merror[0m] [0m                     ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:29: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : Array[parentA.geneType][0m
+[0m[[31merror[0m] [0m required: Array[Agent#geneType][0m
+[0m[[31merror[0m] [0mNote: parentA.geneType <: Agent#geneType, but class Array is invariant in type T.[0m
+[0m[[31merror[0m] [0mYou may wish to investigate a wildcard type such as `_ <: Agent#geneType`. (SLS 3.2.10)[0m
+[0m[[31merror[0m] [0m	val genomeA = Array.concat(pAslice1,pBslice1)[0m
+[0m[[31merror[0m] [0m	                           ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:29: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : Array[parentB.geneType][0m
+[0m[[31merror[0m] [0m required: Array[Agent#geneType][0m
+[0m[[31merror[0m] [0mNote: parentB.geneType <: Agent#geneType, but class Array is invariant in type T.[0m
+[0m[[31merror[0m] [0mYou may wish to investigate a wildcard type such as `_ <: Agent#geneType`. (SLS 3.2.10)[0m
+[0m[[31merror[0m] [0m	val genomeA = Array.concat(pAslice1,pBslice1)[0m
+[0m[[31merror[0m] [0m	                                    ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:29: No ClassTag available for Agent#geneType[0m
+[0m[[31merror[0m] [0m	val genomeA = Array.concat(pAslice1,pBslice1)[0m
+[0m[[31merror[0m] [0m	                          ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:33: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : Array[parentB.geneType][0m
+[0m[[31merror[0m] [0m required: Array[Agent#geneType][0m
+[0m[[31merror[0m] [0mNote: parentB.geneType <: Agent#geneType, but class Array is invariant in type T.[0m
+[0m[[31merror[0m] [0mYou may wish to investigate a wildcard type such as `_ <: Agent#geneType`. (SLS 3.2.10)[0m
+[0m[[31merror[0m] [0m	val genomeB = Array.concat(pBslice2, pAslice2)[0m
+[0m[[31merror[0m] [0m	                           ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:33: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : Array[parentA.geneType][0m
+[0m[[31merror[0m] [0m required: Array[Agent#geneType][0m
+[0m[[31merror[0m] [0mNote: parentA.geneType <: Agent#geneType, but class Array is invariant in type T.[0m
+[0m[[31merror[0m] [0mYou may wish to investigate a wildcard type such as `_ <: Agent#geneType`. (SLS 3.2.10)[0m
+[0m[[31merror[0m] [0m	val genomeB = Array.concat(pBslice2, pAslice2)[0m
+[0m[[31merror[0m] [0m	                                     ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:33: No ClassTag available for Agent#geneType[0m
+[0m[[31merror[0m] [0m	val genomeB = Array.concat(pBslice2, pAslice2)[0m
+[0m[[31merror[0m] [0m	                          ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:35: reassignment to val[0m
+[0m[[31merror[0m] [0m	childA.genome = genomeA[0m
+[0m[[31merror[0m] [0m	              ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:36: reassignment to val[0m
+[0m[[31merror[0m] [0m	childB.genome = genomeB[0m
+[0m[[31merror[0m] [0m	              ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:51: value geneType is not a member of Agent[0m
+[0m[[31merror[0m] [0m    val geneType = parentA.geneType		  [0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:54: not found: type Bernoulli[0m
+[0m[[31merror[0m] [0m    val bern = new Bernoulli(pCrossover)[0m
+[0m[[31merror[0m] [0m                   ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverGenerator.scala:20: not found: value crossover[0m
+[0m[[31merror[0m] [0m    return crossover[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:3: not found: object breeze[0m
+[0m[[31merror[0m] [0mimport breeze.linalg._[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:4: not found: object breeze[0m
+[0m[[31merror[0m] [0mimport breeze.stats.distributions._[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:22: selectionGenerator.type does not take parameters[0m
+[0m[[31merror[0m] [0m    val selection = selectionGenerator(selectionType)[0m
+[0m[[31merror[0m] [0m                                      ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:25: crossoverGenerator.type does not take parameters[0m
+[0m[[31merror[0m] [0m    val crossover = crossoverGenerator(crossoverType)[0m
+[0m[[31merror[0m] [0m                                      ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:29: not found: type Bernoulli[0m
+[0m[[31merror[0m] [0m      var bern = new Bernoulli(mutProb)[0m
+[0m[[31merror[0m] [0m                     ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:33: value unary_! is not a member of ag.geneType[0m
+[0m[[31merror[0m] [0m      ag.genome.foreach(x => if (bern.draw()) !x )[0m
+[0m[[31merror[0m] [0m                                              ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:33: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : Unit[0m
+[0m[[31merror[0m] [0m required: Agent[0m
+[0m[[31merror[0m] [0m      ag.genome.foreach(x => if (bern.draw()) !x )[0m
+[0m[[31merror[0m] [0m                       ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:46: not found: value select[0m
+[0m[[31merror[0m] [0m        val parent1 = select(pop)[0m
+[0m[[31merror[0m] [0m                      ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:47: not found: value select[0m
+[0m[[31merror[0m] [0m        val parent2 = select(pop)[0m
+[0m[[31merror[0m] [0m                      ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:55: not found: type Uniform[0m
+[0m[[31merror[0m] [0m        val unif = new Uniform(0, newPop.length - 1)[0m
+[0m[[31merror[0m] [0m                       ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:57: reassignment to val[0m
+[0m[[31merror[0m] [0m	newPop = removeAgent(newPop, index)[0m
+[0m[[31merror[0m] [0m	       ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionFuncs.scala:1: not found: object breeze[0m
+[0m[[31merror[0m] [0mimport breeze.linalg._[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionFuncs.scala:2: not found: object breeze[0m
+[0m[[31merror[0m] [0mimport breeze.stats.distributions._[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionFuncs.scala:9: not found: value DenseVector[0m
+[0m[[31merror[0m] [0m    val params = DenseVector(fitArrayProp)[0m
+[0m[[31merror[0m] [0m                 ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionFuncs.scala:13: not found: type Multinomial[0m
+[0m[[31merror[0m] [0m    val mult = new Multinomial(params)[0m
+[0m[[31merror[0m] [0m                   ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionFuncs.scala:21: not found: value DenseVector[0m
+[0m[[31merror[0m] [0m    val params = DenseVector(parameters)[0m
+[0m[[31merror[0m] [0m                 ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionFuncs.scala:22: not found: type Multinomial[0m
+[0m[[31merror[0m] [0m    val mult = new Multinomial(params)[0m
+[0m[[31merror[0m] [0m                   ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionGenerator.scala:17: not found: value select[0m
+[0m[[31merror[0m] [0m    return select[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m33 errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
