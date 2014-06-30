@@ -28,9 +28,18 @@ TODO
 -------------
 
 
-* Figure out how we want to generalize 'mutate' to genomeTypes other than Boolean. 
+
 * There are some serious unsolved type issues with the reproGenerator code. I will try to document the issues well
   and get you up to speed on that code layout. 
+
+* Figure out how we want to generalize 'mutate' to genomeTypes other than Boolean. 
+* Figure out the extent to which the component functions for selection and crossover generalize to different 
+  numbers of parents and children. 
+  For instance, how would we do 'slice' if reproduction had 3 parents and 2 children. Similarly with 'shuffle'
+* I couldn't think of a way to accomplish 'shuffle' without 'sampling without replacement', which 
+  is not currently a feature supported by Breeze. It seems straightforward to implement, but my only ideas were very
+  inefficient. This sounds like the kind of problem for which D. Blount has a good intuition. 
+
 
 reproGenerator
 --------------
