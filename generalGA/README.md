@@ -39,6 +39,14 @@ TODO
 * I couldn't think of a way to accomplish 'shuffle' without 'sampling without replacement', which 
   is not currently a feature supported by Breeze. It seems straightforward to implement, but my only ideas were very
   inefficient. This sounds like the kind of problem for which D. Blount has a good intuition. 
+* Implement the following case classes for Simulation: 
+  1. General/trivial 'maximize number of ones' in a binary bitstring
+  2. Prisoners
+  3. GA for clustering data (as per Maulik 2000)
+  4. Weights of Neural Nets 
+
+* Implement more selection, crossover, and mutation schemes.  
+* Log results of a simulation for summary of relevant stats and visualization.
 
 
 reproGenerator
