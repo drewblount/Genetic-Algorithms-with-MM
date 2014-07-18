@@ -1,31 +1,31 @@
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
-[0m[[0mdebug[0m] [0m	removed:Set()[0m
-[0m[[0mdebug[0m] [0m	added: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/src/main/scala/Population.scala)[0m
+[0m[[0mdebug[0m] [0m	removed:Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/src/main/scala/selectionFuncs.scala)[0m
+[0m[[0mdebug[0m] [0m	added: Set()[0m
 [0m[[0mdebug[0m] [0m	modified: Set()[0m
-[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/target/scala-2.10/classes/Prisoner.class, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/target/scala-2.10/classes/Prisoner$$anonfun$1.class)[0m
 [0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/src/main/scala/Population.scala)[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/src/main/scala/selectionFuncs.scala)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
-[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	product: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/src/main/scala/prisoner.scala)[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/src/main/scala/Population.scala)[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/src/main/scala/selectionFuncs.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/src/main/scala/prisoner.scala)[0m
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/target/scala-2.10/classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 6fb2c9c6, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 285b21bd, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/var/root/.sbt/boot/scala-2.10.3/lib/scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/target/scala-2.10/classes:/var/root/.ivy2/cache/org.scalanlp/breeze_2.10/jars/breeze_2.10-0.7.jar:/var/root/.ivy2/cache/org.scalanlp/breeze-macros_2.10/jars/breeze-macros_2.10-0.3.jar:/var/root/.sbt/boot/scala-2.10.3/lib/scala-reflect.jar:/var/root/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.2.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/core/jars/core-1.1.2.jar:/var/root/.ivy2/cache/net.sourceforge.f2j/arpack_combined_all/jars/arpack_combined_all-0.1-javadoc.jar:/var/root/.ivy2/cache/net.sourceforge.f2j/arpack_combined_all/jars/arpack_combined_all-0.1.jar:/var/root/.ivy2/cache/net.sf.opencsv/opencsv/jars/opencsv-2.3.jar:/var/root/.ivy2/cache/com.github.rwl/jtransforms/jars/jtransforms-2.4.0.jar:/var/root/.ivy2/cache/junit/junit/jars/junit-4.8.2.jar:/var/root/.ivy2/cache/org.apache.commons/commons-math3/jars/commons-math3-3.2.jar:/var/root/.ivy2/cache/org.spire-math/spire_2.10/jars/spire_2.10-0.7.1.jar:/var/root/.ivy2/cache/org.spire-math/spire-macros_2.10/jars/spire-macros_2.10-0.7.1.jar:/var/root/.ivy2/cache/com.typesafe/scalalogging-slf4j_2.10/jars/scalalogging-slf4j_2.10-1.0.1.jar:/var/root/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.2.jar:/var/root/.ivy2/cache/org.scalanlp/breeze-natives_2.10/jars/breeze-natives_2.10-0.7.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-osx-x86_64/jars/netlib-native_ref-osx-x86_64-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/native_ref-java/jars/native_ref-java-1.1.jar:/var/root/.ivy2/cache/com.github.fommil/jniloader/jars/jniloader-1.1.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-x86_64/jars/netlib-native_ref-linux-x86_64-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-i686/jars/netlib-native_ref-linux-i686-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-x86_64/jars/netlib-native_ref-win-x86_64-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-i686/jars/netlib-native_ref-win-i686-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-armhf/jars/netlib-native_ref-linux-armhf-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-osx-x86_64/jars/netlib-native_system-osx-x86_64-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/native_system-java/jars/native_system-java-1.1.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-x86_64/jars/netlib-native_system-linux-x86_64-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-i686/jars/netlib-native_system-linux-i686-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-armhf/jars/netlib-native_system-linux-armhf-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-x86_64/jars/netlib-native_system-win-x86_64-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-i686/jars/netlib-native_system-win-i686-1.1-natives.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 3.855886 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 3.795913 s[0m
 [0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
-[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/src/main/scala/Population.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/src/main/scala/Population.scala)[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/src/main/scala/selectionFuncs.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/prisoners/src/main/scala/selectionFuncs.scala)[0m
 [0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
 [0m[[0mdebug[0m] [0mNew invalidations:[0m
 [0m[[0mdebug[0m] [0m	Set()[0m

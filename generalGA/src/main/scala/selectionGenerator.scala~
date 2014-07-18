@@ -1,0 +1,25 @@
+import selectionFuncs._
+import Agent._
+
+object SelectionTypeError extends Exception
+
+object selectionGenerator {
+
+  // default is fitness proportionate. 
+
+  def selectionGen[A](selectionType:String):Array[Typed[A]] => Typed[A] = {
+    var select = fitnessProportionateSampling[A](_)
+    if (selectionType == "fitnessProportionateSampling") {
+      select = fitnessProportionateSampling[A](_)
+    }
+
+    else if (selectionType == "randomSampling") {
+      select = randomSampling[A](_)
+    }
+
+    else throw SelectionTypeError
+
+    return select
+  }
+
+}

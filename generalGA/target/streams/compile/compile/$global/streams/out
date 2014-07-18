@@ -1,0 +1,81 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set()[0m
+[0m[[0mdebug[0m] [0m	modified: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/simulation.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionFuncs.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/agent.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala)[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/simulation.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionFuncs.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/agent.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/simulation.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/selectionFuncs.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/agent.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala, /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 7 sources: invalidated sources (7) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 7 Scala sources to /Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 7140b41, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/var/root/.sbt/boot/scala-2.10.3/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/target/scala-2.10/classes:/var/root/.ivy2/cache/org.scalanlp/breeze_2.10/jars/breeze_2.10-0.7.jar:/var/root/.ivy2/cache/org.scalanlp/breeze-macros_2.10/jars/breeze-macros_2.10-0.3.jar:/var/root/.sbt/boot/scala-2.10.3/lib/scala-reflect.jar:/var/root/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.2.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/core/jars/core-1.1.2.jar:/var/root/.ivy2/cache/net.sourceforge.f2j/arpack_combined_all/jars/arpack_combined_all-0.1-javadoc.jar:/var/root/.ivy2/cache/net.sourceforge.f2j/arpack_combined_all/jars/arpack_combined_all-0.1.jar:/var/root/.ivy2/cache/net.sf.opencsv/opencsv/jars/opencsv-2.3.jar:/var/root/.ivy2/cache/com.github.rwl/jtransforms/jars/jtransforms-2.4.0.jar:/var/root/.ivy2/cache/junit/junit/jars/junit-4.8.2.jar:/var/root/.ivy2/cache/org.apache.commons/commons-math3/jars/commons-math3-3.2.jar:/var/root/.ivy2/cache/org.spire-math/spire_2.10/jars/spire_2.10-0.7.1.jar:/var/root/.ivy2/cache/org.spire-math/spire-macros_2.10/jars/spire-macros_2.10-0.7.1.jar:/var/root/.ivy2/cache/com.typesafe/scalalogging-slf4j_2.10/jars/scalalogging-slf4j_2.10-1.0.1.jar:/var/root/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.2.jar:/var/root/.ivy2/cache/org.scalanlp/breeze-natives_2.10/jars/breeze-natives_2.10-0.7.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-osx-x86_64/jars/netlib-native_ref-osx-x86_64-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/native_ref-java/jars/native_ref-java-1.1.jar:/var/root/.ivy2/cache/com.github.fommil/jniloader/jars/jniloader-1.1.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-x86_64/jars/netlib-native_ref-linux-x86_64-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-i686/jars/netlib-native_ref-linux-i686-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-x86_64/jars/netlib-native_ref-win-x86_64-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-i686/jars/netlib-native_ref-win-i686-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-armhf/jars/netlib-native_ref-linux-armhf-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-osx-x86_64/jars/netlib-native_system-osx-x86_64-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/native_system-java/jars/native_system-java-1.1.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-x86_64/jars/netlib-native_system-linux-x86_64-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-i686/jars/netlib-native_system-linux-i686-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-armhf/jars/netlib-native_system-linux-armhf-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-x86_64/jars/netlib-native_system-win-x86_64-1.1-natives.jar:/var/root/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-i686/jars/netlib-native_system-win-i686-1.1-natives.jar[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:34: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : Array[parentA.geneType][0m
+[0m[[31merror[0m] [0m required: Array[E#geneType][0m
+[0m[[31merror[0m] [0mNote: parentA.geneType <: E#geneType, but class Array is invariant in type T.[0m
+[0m[[31merror[0m] [0mYou may wish to investigate a wildcard type such as `_ <: E#geneType`. (SLS 3.2.10)[0m
+[0m[[31merror[0m] [0m	val genomeA = Array.concat(aInit, bTail)[0m
+[0m[[31merror[0m] [0m	                           ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:34: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : Array[parentB.geneType][0m
+[0m[[31merror[0m] [0m required: Array[E#geneType][0m
+[0m[[31merror[0m] [0mNote: parentB.geneType <: E#geneType, but class Array is invariant in type T.[0m
+[0m[[31merror[0m] [0mYou may wish to investigate a wildcard type such as `_ <: E#geneType`. (SLS 3.2.10)[0m
+[0m[[31merror[0m] [0m	val genomeA = Array.concat(aInit, bTail)[0m
+[0m[[31merror[0m] [0m	                                  ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:34: No ClassTag available for E#geneType[0m
+[0m[[31merror[0m] [0m	val genomeA = Array.concat(aInit, bTail)[0m
+[0m[[31merror[0m] [0m	                          ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:35: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : Array[parentB.geneType][0m
+[0m[[31merror[0m] [0m required: Array[E#geneType][0m
+[0m[[31merror[0m] [0mNote: parentB.geneType <: E#geneType, but class Array is invariant in type T.[0m
+[0m[[31merror[0m] [0mYou may wish to investigate a wildcard type such as `_ <: E#geneType`. (SLS 3.2.10)[0m
+[0m[[31merror[0m] [0m	val genomeB = Array.concat(bInit, aTail)[0m
+[0m[[31merror[0m] [0m	                           ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:35: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : Array[parentA.geneType][0m
+[0m[[31merror[0m] [0m required: Array[E#geneType][0m
+[0m[[31merror[0m] [0mNote: parentA.geneType <: E#geneType, but class Array is invariant in type T.[0m
+[0m[[31merror[0m] [0mYou may wish to investigate a wildcard type such as `_ <: E#geneType`. (SLS 3.2.10)[0m
+[0m[[31merror[0m] [0m	val genomeB = Array.concat(bInit, aTail)[0m
+[0m[[31merror[0m] [0m	                                  ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/crossoverFuncs.scala:35: No ClassTag available for E#geneType[0m
+[0m[[31merror[0m] [0m	val genomeB = Array.concat(bInit, aTail)[0m
+[0m[[31merror[0m] [0m	                          ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:16: No ClassTag available for E[0m
+[0m[[31merror[0m] [0m    return Array.concat(slice1, slice2)[0m
+[0m[[31merror[0m] [0m                       ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:48: cannot find class tag for element type E[0m
+[0m[[31merror[0m] [0m      var newPop:Array[E] = new Array[E](0)[0m
+[0m[[31merror[0m] [0m                            ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:58: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : scala.collection.mutable.ArraySeq[E][0m
+[0m[[31merror[0m] [0m required: Array[E][0m
+[0m[[31merror[0m] [0m	newPop :+= children._1[0m
+[0m[[31merror[0m] [0m	       ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/reproGenerator.scala:59: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : scala.collection.mutable.ArraySeq[E][0m
+[0m[[31merror[0m] [0m required: Array[E][0m
+[0m[[31merror[0m] [0m	newPop :+= children._2[0m
+[0m[[31merror[0m] [0m	       ^[0m
+[0m[[31merror[0m] [0m/Users/jacobmenick/Desktop/Genetic-Algorithms-with-MM/generalGA/src/main/scala/simulation.scala:32: not found: type E[0m
+[0m[[31merror[0m] [0m    val repro = reproGen[E](selectionType, crossoverType, crossProb, mutProb)[0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0m11 errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
