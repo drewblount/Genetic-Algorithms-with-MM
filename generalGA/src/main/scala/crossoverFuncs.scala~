@@ -9,8 +9,7 @@ object crossoverFuncs {
 
     val genomeSize:Int = parentA.genome.length		
     require (parentB.genome.length == genomeSize)
-    import parentA.geneTag, parentB.geneTag
-    // require(E#geneType == parentA.geneTag)
+    import parentA.geneTag
 
     // Initiallly, copy the new children as the parents. 
     val (childA, childB) = (parentA, parentB)

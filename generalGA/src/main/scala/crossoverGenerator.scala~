@@ -8,14 +8,14 @@ object crossoverGenerator {
   def crossoverGen[E <: Agent](crossoverType:String):(E,E, 
                                           Double) => (E,E) = {
 
-    var crossover = sliceFunc[E](_, _, _)					  
+    var crossover = sliceFunc[E#geneType](_, _, _)					  
 
     if (crossoverType == "slice") {
-      crossover = sliceFunc[E](_, _, _)
+      crossover = sliceFunc[E#geneType](_, _, _)
     }				  
 
     else if (crossoverType == "shuffle") {
-      crossover = shuffleFunc[E](_, _, _)
+      crossover = shuffleFunc[E#geneType](_, _, _)
     }
 
     else throw CrossoverTypeError

@@ -2,25 +2,39 @@ abstract class Agent  {
   type geneType
   val genome: Array[geneType]
   var fitness = 0.0
+  // How do we specify whether fitness has been instantiated yet?
+  // var fitDefined = false
+  // 
+  // JM - maybe we initialize at -1 like memory? 
+  // JM - then we could double check and throw exceptions if it's still -1 
+  //      after fitness assignment occurs.  
+
+  // This ClassTag business was suggested by '0__' on Stack Overflow: 
+  // see 'define function for extension of abstract class'
   implicit def geneTag: reflect.ClassTag[geneType]
+  type Typed[A] = Agent { type geneType = A }
+
   def copy(newGenome: Array[geneType]): Typed[geneType]
+  
 }
 
 // object Agent { type U <: Agent }
-object Agent { type Typed[A] = Agent { type geneType = A }}
+object Agent { 
+  type Typed[A] = Agent { type geneType = A }
+}
 
 case class intAgent(initGenome: Array[Int]) extends Agent {
   type geneType = Int
   val genome = initGenome
-  def copy(newGenome: Array[Int]):Typed[Int] = new intAgent(newGenome:Array[Int])
+  def copy(newGenome: Array[Int]):AgentT[Int] = new intAgent(newGenome:Array[Int])
   def geneTag = implicitly[reflect.ClassTag[Int]]
+
 }
 
-case class Prisoner(initGenome: Array[Boolean], memSize: Int) extends Agent {
+case class Prisoner(genome: Array[Boolean], memSize: Int) extends Agent {
   type geneType = Boolean
-  val genome = initGenome
   def geneTag = implicitly[reflect.ClassTag[Boolean]]
-  def copy(newGenome: Array[geneType]):Typed[Boolean] = new Prisoner(newGenome:Array[Boolean], memSize: Int) 
+  def copy(newGenome: Array[geneType]):AgentT[Boolean] = new Prisoner(newGenome:Array[Boolean], memSize: Int) 
   var resources = 0.0
   // Memory of opponent's past behavior for the last memSize rounds
   // -1: no memory. 0: opponent cooperated. 1: opponent defected
